@@ -27,5 +27,13 @@ namespace CricketGameTest
             game.Score(7);
             Assert.IsTrue(game.PlayerScore == 0);
         }
+        
+        [TestMethod]
+        public void PlayerGetsOutThenOutShouldBeTrue()
+        {
+            var game = new Cricket();
+            game.Out = true;
+            Assert.IsTrue(game.Out == true);
+        }
     }
 }
